@@ -1,0 +1,9 @@
+{
+  "buildCommand": "pnpm install && PORT=3000 BASE_PATH=/ pnpm --filter @workspace/english-grammar run build",
+  "outputDirectory": "artifacts/english-grammar/dist/public",
+  "installCommand": "pnpm install",
+  "framework": null,
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
