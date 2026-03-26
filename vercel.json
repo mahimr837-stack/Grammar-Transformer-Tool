@@ -1,5 +1,5 @@
 {
-  "buildCommand": "PORT=3000 BASE_PATH=/ pnpm --filter @workspace/english-grammar run build",
+  "buildCommand": "node build-for-vercel.mjs",
   "outputDirectory": "dist",
   "installCommand": "pnpm install",
   "framework": null,
