@@ -19,7 +19,7 @@ run = "pnpm --filter @workspace/english-grammar run dev"
 
 [services.production]
 build = [ "pnpm", "--filter", "@workspace/english-grammar", "run", "build" ]
-publicDir = "artifacts/english-grammar/dist/public"
+publicDir = "artifacts/english-grammar/dist"
 serve = "static"
 
 [[services.production.rewrites]]
