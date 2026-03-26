@@ -1,6 +1,6 @@
 {
-  "buildCommand": "PORT=3000 BASE_PATH=/ pnpm --filter @workspace/english-grammar run build && cp -r artifacts/english-grammar/dist ./dist-vercel",
-  "outputDirectory": "dist-vercel",
+  "buildCommand": "PORT=3000 BASE_PATH=/ pnpm --filter @workspace/english-grammar run build",
+  "outputDirectory": "dist",
   "installCommand": "pnpm install",
   "framework": null,
   "rewrites": [

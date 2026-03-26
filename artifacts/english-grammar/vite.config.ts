@@ -48,7 +48,9 @@ export default defineConfig({
   },
   root: path.resolve(import.meta.dirname),
   build: {
-    outDir: "dist",
+    outDir: process.env.VERCEL
+      ? path.resolve(import.meta.dirname, "..", "..", "dist")
+      : path.resolve(import.meta.dirname, "dist"),
     emptyOutDir: true,
   },
   server: {
