@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "English Grammar - Transformation of Sentences"
+version = "1.0.0"
+id = "artifacts/english-grammar"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 22254
+
+[services.development]
+run = "pnpm --filter @workspace/english-grammar run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/english-grammar", "run", "build" ]
+publicDir = "artifacts/english-grammar/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "22254"
+BASE_PATH = "/"

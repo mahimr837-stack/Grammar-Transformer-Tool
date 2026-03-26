@@ -48,6 +48,15 @@ Every package extends `tsconfig.base.json` which sets `composite: true`. The roo
 - `pnpm run build` — runs `typecheck` first, then recursively runs `build` in all packages that define it
 - `pnpm run typecheck` — runs `tsc --build --emitDeclarationOnly` using project references
 
+## Artifacts
+
+### `artifacts/english-grammar` — English Grammar Website
+React + Vite app for "Transformation of Sentences" — a comprehensive English grammar study site.
+- 370+ Q&A examples across 6 major topics from the user's PDF
+- Browse mode: see all questions + answers with search/filter
+- Quiz mode: self-test with reveal + correct/wrong scoring
+- Topics: Voice (Active/Passive), Sentence Type, Affirmative/Negative, Sentence Structure, Degree of Comparison, Narration
+
 ## Packages
 
 ### `artifacts/api-server` (`@workspace/api-server`)
